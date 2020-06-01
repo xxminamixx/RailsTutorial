@@ -1,0 +1,7 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+<% @posts.each do |post| %>
+  <hr>
+  <p><span>ぽすと内容: </span><%=link_to post.content, post_path(post.id) %></p>
+<% end %>

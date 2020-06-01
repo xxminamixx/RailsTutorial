@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  devise_for :users
+  resources :users
+  resources :posts
+  
+  root 'posts#index'
 end
